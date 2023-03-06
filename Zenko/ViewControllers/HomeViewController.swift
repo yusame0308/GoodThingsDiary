@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
         tv.delegate = self
         tv.dataSource = self
         tv.showsVerticalScrollIndicator = false
+        tv.separatorInset = .zero
         tv.register(PostTableViewCell.self, forCellReuseIdentifier: cellId)
         return tv
     }()
