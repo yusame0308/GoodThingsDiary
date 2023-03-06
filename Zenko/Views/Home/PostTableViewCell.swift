@@ -35,6 +35,8 @@ class PostTableViewCell: UITableViewCell {
     }
     
     private func setupLayout() {
+        selectionStyle = .none
+        
         addSubview(textLable)
         
         textLable.anchor(centerY: self.centerYAnchor, centerX: centerXAnchor, width: 200, height: 50)
