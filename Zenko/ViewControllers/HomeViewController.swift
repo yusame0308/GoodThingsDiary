@@ -32,12 +32,7 @@ class HomeViewController: UIViewController {
         
         view.addSubview(postTableView)
         
-        postTableView.anchor(bottom: view.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor)
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        postTableView.anchor(top: view.topAnchor, topPadding: view.safeAreaInsets.top)
+        postTableView.anchor(top: view.safeAreaLayoutGuide.topAnchor, bottom: view.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor)
     }
 
 }
