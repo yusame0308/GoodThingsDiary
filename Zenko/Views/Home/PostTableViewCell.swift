@@ -14,6 +14,7 @@ class PostTableViewCell: UITableViewCell {
     private lazy var post: Post = uninitialized() {
         didSet {
             textLable.text = post.text
+            userLable.text = post.user
         }
     }
     
@@ -21,6 +22,13 @@ class PostTableViewCell: UITableViewCell {
         let label = UILabel()
         label.textColor = .black
         label.backgroundColor = .red
+        return label
+    }()
+    
+    private let userLable: UILabel = {
+        let label = UILabel()
+        label.textColor = .black
+        label.backgroundColor = .systemYellow
         return label
     }()
     
@@ -38,8 +46,10 @@ class PostTableViewCell: UITableViewCell {
         selectionStyle = .none
         
         addSubview(textLable)
+        addSubview(userLable)
         
-        textLable.anchor(centerY: self.centerYAnchor, centerX: centerXAnchor, width: 200, height: 50)
+        textLable.anchor(top: self.topAnchor, centerX: centerXAnchor, width: 200, height: 20)
+        userLable.anchor(top: textLable.bottomAnchor, centerX: centerXAnchor, width: 200, height: 20)
     }
     
     func setModel(post: Post) {

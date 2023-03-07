@@ -8,7 +8,7 @@
 import Foundation
 
 struct Post {
-    var text: String = ""
+    var text: String
     var user: String
 }
 
