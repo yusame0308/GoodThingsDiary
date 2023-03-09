@@ -13,22 +13,35 @@ class PostTableViewCell: UITableViewCell {
     
     private lazy var post: Post = uninitialized() {
         didSet {
-            textLable.text = post.text
-            userLable.text = post.userName
+            setTextsFromModel()
         }
     }
     
-    private let textLable: UILabel = {
+    private let textBodyLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
         label.backgroundColor = .red
         return label
     }()
     
-    private let userLable: UILabel = {
+    private let userNameLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
         label.backgroundColor = .systemYellow
+        return label
+    }()
+    
+    private let createdAtLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .black
+        label.backgroundColor = .systemCyan
+        return label
+    }()
+    
+    private let likesLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .black
+        label.backgroundColor = .systemPink
         return label
     }()
     
@@ -45,15 +58,22 @@ class PostTableViewCell: UITableViewCell {
     private func setupLayout() {
         selectionStyle = .none
         
-        addSubview(textLable)
-        addSubview(userLable)
+        addSubview(textBodyLabel)
+        addSubview(userNameLabel)
         
-        textLable.anchor(top: self.topAnchor, centerX: centerXAnchor, width: 200, height: 20)
-        userLable.anchor(top: textLable.bottomAnchor, centerX: centerXAnchor, width: 200, height: 20)
+        textBodyLabel.anchor(top: self.topAnchor, centerX: centerXAnchor, width: 200, height: 20)
+        userNameLabel.anchor(top: textBodyLabel.bottomAnchor, centerX: centerXAnchor, width: 200, height: 20)
     }
     
     func setModel(post: Post) {
         self.post = post
+    }
+    
+    private func setTextsFromModel() {
+        textBodyLabel.text = post.text
+        userNameLabel.text = post.userName
+        createdAtLabel.text = post.createdAt.toString()
+        likesLabel.text = String(post.likes)
     }
     
 }
