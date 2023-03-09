@@ -15,6 +15,7 @@
 		1A95DDCE29B6366D00526975 /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95DDCD29B6366D00526975 /* UIView-Extension.swift */; };
 		1A95DDD329B63C9D00526975 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95DDD229B63C9D00526975 /* Post.swift */; };
 		1A95DDD729B63E8C00526975 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95DDD629B63E8C00526975 /* PostTableViewCell.swift */; };
+		1A95DDD929B9F7FE00526975 /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95DDD829B9F7FE00526975 /* Date-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1A95DDCD29B6366D00526975 /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
 		1A95DDD229B63C9D00526975 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		1A95DDD629B63E8C00526975 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		1A95DDD829B9F7FE00526975 /* Date-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				1A95DDCD29B6366D00526975 /* UIView-Extension.swift */,
+				1A95DDD829B9F7FE00526975 /* Date-Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A95DDD929B9F7FE00526975 /* Date-Extension.swift in Sources */,
 				1A95DDCE29B6366D00526975 /* UIView-Extension.swift in Sources */,
 				1A95DDBD29B4715800526975 /* HomeViewController.swift in Sources */,
 				1A95DDB929B4715800526975 /* AppDelegate.swift in Sources */,
