@@ -14,7 +14,7 @@ class PostTableViewCell: UITableViewCell {
     private lazy var post: Post = uninitialized() {
         didSet {
             textLable.text = post.text
-            userLable.text = post.user
+            userLable.text = post.userName
         }
     }
     

@@ -8,19 +8,23 @@
 import Foundation
 
 struct Post {
+    var id: String = UUID().uuidString
+    var userId: String = "device-user-id"
+    var userName: String = "匿名"
     var text: String
-    var user: String
+    var likes: Int = 0
+    var createdAt: Date = .now
 }
 
 let testPosts = [
-    Post(text: "テストテキスト１", user: "太郎"),
-    Post(text: "テストテキスト２", user: "健太"),
-    Post(text: "テストテキスト３", user: "康太"),
-    Post(text: "テストテキスト４", user: "愛子"),
-    Post(text: "テストテキスト５", user: "洋子"),
-    Post(text: "テストテキスト６", user: "美沙子"),
-    Post(text: "テストテキスト７", user: "翔平"),
-    Post(text: "テストテキスト８", user: "裕一"),
-    Post(text: "テストテキスト９", user: "一真"),
-    Post(text: "テストテキスト１０", user: "家康"),
+    Post(userName: "太郎", text: "テストテキスト１", createdAt: .now + 10),
+    Post(userName: "健太", text: "テストテキスト２"),
+    Post(userName: "康太", text: "テストテキスト３"),
+    Post(userName: "愛子", text: "テストテキスト４"),
+    Post(userName: "洋子", text: "テストテキスト５"),
+    Post(userName: "美沙子", text: "テストテキスト６"),
+    Post(userName: "翔平", text: "テストテキスト７"),
+    Post(userName: "裕一", text: "テストテキスト８"),
+    Post(userName: "一真", text: "テストテキスト９"),
+    Post(userName: "家康", text: "テストテキスト１０"),
 ]
