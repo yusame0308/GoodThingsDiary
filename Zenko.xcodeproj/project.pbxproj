@@ -16,6 +16,7 @@
 		1A95DDD329B63C9D00526975 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95DDD229B63C9D00526975 /* Post.swift */; };
 		1A95DDD729B63E8C00526975 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95DDD629B63E8C00526975 /* PostTableViewCell.swift */; };
 		1A95DDD929B9F7FE00526975 /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95DDD829B9F7FE00526975 /* Date-Extension.swift */; };
+		1A95DDDC29BD15EC00526975 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95DDDB29BD15EB00526975 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1A95DDD229B63C9D00526975 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		1A95DDD629B63E8C00526975 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		1A95DDD829B9F7FE00526975 /* Date-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date-Extension.swift"; sourceTree = "<group>"; };
+		1A95DDDB29BD15EB00526975 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				1A95DDC129B4715C00526975 /* Assets.xcassets */,
 				1A95DDC329B4715C00526975 /* LaunchScreen.storyboard */,
 				1A95DDC629B4715C00526975 /* Info.plist */,
+				1A95DDDB29BD15EB00526975 /* Constant.swift */,
 			);
 			path = Zenko;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				1A95DDD929B9F7FE00526975 /* Date-Extension.swift in Sources */,
 				1A95DDCE29B6366D00526975 /* UIView-Extension.swift in Sources */,
 				1A95DDBD29B4715800526975 /* HomeViewController.swift in Sources */,
+				1A95DDDC29BD15EC00526975 /* Constant.swift in Sources */,
 				1A95DDB929B4715800526975 /* AppDelegate.swift in Sources */,
 				1A95DDBB29B4715800526975 /* SceneDelegate.swift in Sources */,
 				1A95DDD329B63C9D00526975 /* Post.swift in Sources */,

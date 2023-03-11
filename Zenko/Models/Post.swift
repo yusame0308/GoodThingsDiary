@@ -18,10 +18,10 @@ struct Post {
 
 let testPosts = [
     Post(userName: "太郎", text: "勉強した", createdAt: .now - 700000),
-    Post(userName: "健太", text: "駅でおばあちゃんを助けて、道案内もした。お礼にたくさんお菓子をもらって嬉しかった。"),
-    Post(userName: "康太", text: "犬の散歩に行った"),
+    Post(userName: "健太", text: "駅でおばあちゃんを助けて、道案内もした。お礼にたくさんお菓子をもらって嬉しかった。", likes: 3),
+    Post(userName: "康太", text: "犬の散歩に行った", likes: 12),
     Post(userName: "愛子", text: "駅でおばあちゃんを助けて、道案内もした。お礼にたくさんお菓子をもらって嬉しかった。駅でおばあちゃんを助けて、道案内もした。お礼にたくさんお菓子をもらって嬉しかった。"),
-    Post(userName: "洋子", text: "テストでいい点とってうれしい。ご褒美にお菓子を食べた。"),
+    Post(userName: "洋子", text: "テストでいい点とってうれしい。ご褒美にお菓子を食べた。", likes: 269),
     Post(userName: "美沙子", text: "がんばった"),
     Post(userName: "翔平", text: "皿を洗った"),
     Post(userName: "裕一", text: "学校に行った"),

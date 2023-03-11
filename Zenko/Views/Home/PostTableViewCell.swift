@@ -39,8 +39,12 @@ class PostTableViewCell: UITableViewCell {
     }()
     
     private let likesButton: UIButton = {
-        let button = UIButton()
-        button.setTitleColor(.systemPink, for: .normal)
+        var config = UIButton.Configuration.plain()
+        config.image = UIImage(systemName: "heart", withConfiguration: UIImage.SymbolConfiguration(pointSize: 11, weight: .semibold))?.withAlignmentRectInsets(UIEdgeInsets(top: 0, left: 0, bottom: -1, right: 0))
+        config.imagePadding = 2.0
+        config.baseForegroundColor = Constant.kPinkUIColor
+        config.contentInsets = .zero
+        let button = UIButton(configuration: config)
         return button
     }()
     
@@ -97,7 +101,7 @@ class PostTableViewCell: UITableViewCell {
         textBodyLabel.text = post.text
         userNameLabel.text = post.userName
         createdAtLabel.text = post.createdAt.toString()
-        likesButton.setTitle(String(post.likes), for: .normal)
+        likesButton.configuration?.attributedTitle = AttributedString(String(post.likes), attributes: Constant.kAttribute)
     }
     
 }
