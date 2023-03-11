@@ -38,11 +38,10 @@ class PostTableViewCell: UITableViewCell {
         return label
     }()
     
-    private let likesLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .black
-        label.backgroundColor = .systemPink
-        return label
+    private let likesButton: UIButton = {
+        let button = UIButton()
+        button.setTitleColor(.systemPink, for: .normal)
+        return button
     }()
     
     private let othersButton: UIButton = {
@@ -80,7 +79,7 @@ class PostTableViewCell: UITableViewCell {
         textBodyLabel.text = post.text
         userNameLabel.text = post.userName
         createdAtLabel.text = post.createdAt.toString()
-        likesLabel.text = String(post.likes)
+        likesButton.setTitle(String(post.likes), for: .normal)
     }
     
 }
