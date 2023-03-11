@@ -16,7 +16,7 @@ class HomeViewController: UIViewController {
         tv.delegate = self
         tv.dataSource = self
         tv.showsVerticalScrollIndicator = false
-        tv.separatorInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
+        tv.separatorInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         tv.separatorColor = .systemGray
         tv.register(PostTableViewCell.self, forCellReuseIdentifier: cellId)
         return tv

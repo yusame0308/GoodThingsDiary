@@ -20,21 +20,21 @@ class PostTableViewCell: UITableViewCell {
     private let textBodyLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
-        label.backgroundColor = .red
+        label.numberOfLines = 0
         return label
     }()
     
     private let userNameLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .black
-        label.backgroundColor = .systemYellow
+        label.textColor = .darkGray
+        label.font = UIFont.systemFont(ofSize: 16, weight: .medium)
         return label
     }()
     
     private let createdAtLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .black
-        label.backgroundColor = .systemCyan
+        label.textColor = .systemGray
+        label.font = UIFont.systemFont(ofSize: 14)
         return label
     }()
     
@@ -47,7 +47,7 @@ class PostTableViewCell: UITableViewCell {
     private let othersButton: UIButton = {
         let button = UIButton()
         button.setImage(UIImage(systemName: "ellipsis"), for: .normal)
-        button.tintColor = .black
+        button.tintColor = .systemGray
         return button
     }()
     
@@ -64,11 +64,29 @@ class PostTableViewCell: UITableViewCell {
     private func setupLayout() {
         selectionStyle = .none
         
-        addSubview(textBodyLabel)
-        addSubview(userNameLabel)
+        let stackViewHeight: CGFloat = 20
         
-        textBodyLabel.anchor(top: self.topAnchor, centerX: centerXAnchor, width: 200, height: 20)
-        userNameLabel.anchor(top: textBodyLabel.bottomAnchor, centerX: centerXAnchor, width: 200, height: 20)
+        let topStackView = UIStackView(arrangedSubviews: [userNameLabel, othersButton])
+        topStackView.axis = .horizontal
+        topStackView.alignment = .top
+        topStackView.distribution = .equalSpacing
+        
+        let bottomStackView = UIStackView(arrangedSubviews: [createdAtLabel, likesButton])
+        bottomStackView.axis = .horizontal
+        bottomStackView.alignment = .bottom
+        bottomStackView.distribution = .equalSpacing
+        
+        let baseStackView = UIStackView(arrangedSubviews: [topStackView, textBodyLabel, bottomStackView])
+        baseStackView.axis = .vertical
+        baseStackView.alignment = .center
+        baseStackView.spacing = 10
+        
+        addSubview(baseStackView)
+        
+        topStackView.anchor(left: baseStackView.leftAnchor, right: baseStackView.rightAnchor, height: stackViewHeight)
+        bottomStackView.anchor(left: baseStackView.leftAnchor, right: baseStackView.rightAnchor, height: stackViewHeight)
+        textBodyLabel.anchor(left: baseStackView.leftAnchor, right: baseStackView.rightAnchor, leftPadding: 2, rightPadding: 2)
+        baseStackView.anchor(top: self.topAnchor, bottom: self.bottomAnchor, left: self.leftAnchor, right: self.rightAnchor, topPadding: 15, bottomPadding: 15, leftPadding: 30, rightPadding: 30)
     }
     
     func setModel(post: Post) {

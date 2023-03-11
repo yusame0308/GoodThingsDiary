@@ -17,14 +17,14 @@ struct Post {
 }
 
 let testPosts = [
-    Post(userName: "太郎", text: "テストテキスト１", createdAt: .now + 10),
-    Post(userName: "健太", text: "テストテキスト２"),
-    Post(userName: "康太", text: "テストテキスト３"),
-    Post(userName: "愛子", text: "テストテキスト４"),
-    Post(userName: "洋子", text: "テストテキスト５"),
-    Post(userName: "美沙子", text: "テストテキスト６"),
-    Post(userName: "翔平", text: "テストテキスト７"),
-    Post(userName: "裕一", text: "テストテキスト８"),
-    Post(userName: "一真", text: "テストテキスト９"),
-    Post(userName: "家康", text: "テストテキスト１０"),
+    Post(userName: "太郎", text: "勉強した", createdAt: .now + 1000),
+    Post(userName: "健太", text: "駅でおばあちゃんを助けて、道案内もした。お礼にたくさんお菓子をもらって嬉しかった。"),
+    Post(userName: "康太", text: "犬の散歩に行った"),
+    Post(userName: "愛子", text: "駅でおばあちゃんを助けて、道案内もした。お礼にたくさんお菓子をもらって嬉しかった。駅でおばあちゃんを助けて、道案内もした。お礼にたくさんお菓子をもらって嬉しかった。"),
+    Post(userName: "洋子", text: "テストでいい点とってうれしい。ご褒美にお菓子を食べた。"),
+    Post(userName: "美沙子", text: "がんばった"),
+    Post(userName: "翔平", text: "皿を洗った"),
+    Post(userName: "裕一", text: "学校に行った"),
+    Post(userName: "一真", text: "ランニングした。"),
+    Post(userName: "家康", text: "ご飯作った"),
 ]
