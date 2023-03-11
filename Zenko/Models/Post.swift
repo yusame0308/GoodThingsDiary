@@ -17,7 +17,7 @@ struct Post {
 }
 
 let testPosts = [
-    Post(userName: "太郎", text: "勉強した", createdAt: .now + 1000),
+    Post(userName: "太郎", text: "勉強した", createdAt: .now - 700000),
     Post(userName: "健太", text: "駅でおばあちゃんを助けて、道案内もした。お礼にたくさんお菓子をもらって嬉しかった。"),
     Post(userName: "康太", text: "犬の散歩に行った"),
     Post(userName: "愛子", text: "駅でおばあちゃんを助けて、道案内もした。お礼にたくさんお菓子をもらって嬉しかった。駅でおばあちゃんを助けて、道案内もした。お礼にたくさんお菓子をもらって嬉しかった。"),

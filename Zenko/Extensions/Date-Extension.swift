@@ -14,7 +14,7 @@ extension Date {
         formatter.calendar = Calendar(identifier: .gregorian)
         formatter.timeZone = TimeZone(identifier: "Asia/Tokyo")
         formatter.locale = Locale(identifier: "ja_JP")
-        formatter.dateFormat = "M月d日 H時m分"
+        formatter.dateFormat = "M月d日 H時mm分"
         
         return formatter.string(from: self)
     }
