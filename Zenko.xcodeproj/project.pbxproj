@@ -18,6 +18,7 @@
 		1A95DDD929B9F7FE00526975 /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95DDD829B9F7FE00526975 /* Date-Extension.swift */; };
 		1A95DDDC29BD15EC00526975 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95DDDB29BD15EB00526975 /* Constant.swift */; };
 		1A95DDDE29BE3BD000526975 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95DDDD29BE3BD000526975 /* TopBar.swift */; };
+		1A95DDE029BE51E700526975 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A95DDDF29BE51E600526975 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		1A95DDD829B9F7FE00526975 /* Date-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date-Extension.swift"; sourceTree = "<group>"; };
 		1A95DDDB29BD15EB00526975 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		1A95DDDD29BE3BD000526975 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		1A95DDDF29BE51E600526975 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				1A95DDBC29B4715800526975 /* HomeViewController.swift */,
+				1A95DDDF29BE51E600526975 /* AddViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A95DDE029BE51E700526975 /* AddViewController.swift in Sources */,
 				1A95DDD929B9F7FE00526975 /* Date-Extension.swift in Sources */,
 				1A95DDDE29BE3BD000526975 /* TopBar.swift in Sources */,
 				1A95DDCE29B6366D00526975 /* UIView-Extension.swift in Sources */,

@@ -56,6 +56,9 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // cell tap
+        
+        let vc = AddViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
