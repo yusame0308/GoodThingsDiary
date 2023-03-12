@@ -42,7 +42,7 @@ class PostTableViewCell: UITableViewCell {
         var config = UIButton.Configuration.plain()
         config.image = UIImage(systemName: "heart", withConfiguration: UIImage.SymbolConfiguration(pointSize: 11, weight: .semibold))?.withAlignmentRectInsets(UIEdgeInsets(top: 0, left: 0, bottom: -1, right: 0))
         config.imagePadding = 2.0
-        config.baseForegroundColor = Constant.kPinkUIColor
+        config.baseForegroundColor = Constant.kHeartUIColor
         config.contentInsets = .zero
         let button = UIButton(configuration: config)
         return button
