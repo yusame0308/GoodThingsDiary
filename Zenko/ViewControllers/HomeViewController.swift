@@ -21,6 +21,8 @@ class HomeViewController: UIViewController {
         tv.register(PostTableViewCell.self, forCellReuseIdentifier: cellId)
         return tv
     }()
+    
+    private let topBar = TopBar()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +33,11 @@ class HomeViewController: UIViewController {
     private func setupLayout() {
         view.backgroundColor = .white
         
+        view.addSubview(topBar)
         view.addSubview(postTableView)
         
-        postTableView.anchor(top: view.safeAreaLayoutGuide.topAnchor, bottom: view.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor)
+        topBar.anchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, height: 90)
+        postTableView.anchor(top: topBar.bottomAnchor, bottom: view.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor)
     }
 
 }
